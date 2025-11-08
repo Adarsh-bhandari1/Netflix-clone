@@ -3,14 +3,39 @@
   margin: 0;
 }
 
-main {
+.main {
   background-image: url(assets/images/bg.jpg);
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
   height: 80vh;
+  position: relative;
 }
 
-main .box {
+.main .box {
   height: 80vh;
   width: 100%;
   opacity: 0.44;
   background-color: black;
+  position: absolute;
+  top: 0;
+}
+nav {
+  display: flex;
+  max-width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+}
+
+nav img {
+  color: red;
+  width: 120px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
 }
