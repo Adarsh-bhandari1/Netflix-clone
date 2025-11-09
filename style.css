@@ -51,21 +51,22 @@ nav button {
 }
 .hero {
   font-family: "Martel Sans", sans-serif;
-  height: 100%;
+  height: calc(100% - 62px);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: white;
   position: relative;
-  padding: 30px;
+  padding: 0 30px;
   gap: 23px;
 }
 .hero > :first-child {
   font-weight: 900;
   font-size: 48px;
-  gap: 23px;
+  gap: 10px;
   text-align: center;
+  margin: 0;
 }
 
 .hero > :nth-child(2) {
@@ -78,4 +79,8 @@ nav button {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
+}
+.seperation {
+  height: 11px;
+  background-color: gray;
 }
