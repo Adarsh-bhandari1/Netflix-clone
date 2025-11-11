@@ -80,20 +80,7 @@ nav button {
   font-size: 20px;
   text-align: center;
 }
-
-.curve {
-  position: relative;
-  height: 4px;
-  /* border-radius: 50%; */
-  border-top-left-radius: 100px; /* Equal to height */
-  border-top-right-radius: 100px; /* Equal to height */
-  width: 100%;
-  background: linear-gradient(
-    to right,
-    rgba(33, 13, 22, 1) 16%,
-    rgba(184, 40, 105, 1),
-    rgba(229, 9, 20, 1),
-    rgba(184, 40, 105, 1),
-    rgba(33, 13, 22, 1) 84%
-  );
+.seperation {
+  height: 11px;
+  background-color: gray;
 }
