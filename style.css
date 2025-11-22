@@ -122,8 +122,18 @@ nav button {
   position: relative;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  gap: 50px;
+  justify-content: center;
 }
-.rounded{
-border-radius: 10px;
+.rounded {
+  border-radius: 10px;
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.rounded:hover {
+  transform: scale(1.12);
 }
