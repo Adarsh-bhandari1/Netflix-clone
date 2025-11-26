@@ -137,3 +137,42 @@ nav button {
 .rounded:hover {
   transform: scale(1.12);
 }
+
+.more-reasons h2 {
+  position: relative;
+  top: 50px;
+  left: 20px;
+  font-family: Poppins, sans-serif;
+  color: #fff;
+  font-weight: 900;
+  font-style: normal;
+  margin: 0;
+}
+
+.new-card-box {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.box3 {
+  width: 367px;
+  height: 268.8px;
+  background: linear-gradient(
+    to bottom right,
+    rgb(26, 33, 69),
+    rgb(33, 15, 25)
+  );
+  border-radius: 8px;
+  position: relative;
+}
+
+.box3 svg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
