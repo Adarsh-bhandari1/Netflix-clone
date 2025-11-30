@@ -169,10 +169,30 @@ nav button {
   );
   border-radius: 8px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-left: 22px;
+  padding-top: 22px;
+  gap: 6px;
 }
 
 .box3 svg {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+.box3 h2,
+.box3 h3 {
+  margin: 0;
+  color: #ffffff;
+  font-weight: 600;
+}
+.box3 h2 {
+  color: #ffffff;
+  font-weight: 900;
+}
+.box3 h3 {
+  color: #ffffff;
+  font-weight: 400;
 }
