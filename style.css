@@ -196,3 +196,66 @@ nav button {
   color: #ffffff;
   font-weight: 400;
 }
+.faq {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.faq h2 {
+  position: relative;
+  color: #ffffff;
+  font-weight: 900;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.faq-box {
+  display: flex;
+  background-color: rgb(45, 45, 45);
+  padding: 34px 70px 34px 34px; /* left/right/top/bottom: room for icon on right */
+  color: #ffffff;
+  font-weight: 400;
+  position: relative;
+  top: 40px;
+  width: 90vw;
+  height: 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  transition: background-color 240ms ease, transform 200ms ease,
+    box-shadow 240ms ease;
+}
+
+.faq-box svg,
+.faq-box img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  transition: transform 200ms ease, right 200ms ease;
+}
+
+.faq-box span {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 20px;
+  align-items: center;
+  z-index: 2;
+  transition: color 200ms ease, transform 200ms ease;
+}
+.faq-box:hover {
+  background-color: rgb(65, 65, 65);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.faq-box:hover svg,
+.faq-box:hover img {
+  transform: translateY(-50%) scale(1.05);
+}
