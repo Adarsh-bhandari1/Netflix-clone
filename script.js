@@ -4,8 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   boxes.forEach((box) => {
     const ans = box.nextElementSibling;
     if (!ans || !ans.classList.contains("faq-ans")) return;
-
-    // initial state
     ans.classList.remove("expanded");
     ans.style.maxHeight = "0px";
 
@@ -18,9 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const close = () => {
       box.classList.remove("active");
       ans.style.maxHeight = ans.scrollHeight + "px";
-      //   requestAnimationFrame(() => {
-      //     ans.style.maxHeight = "0px";
-      //   });
       ans.offsetHeight; // force reflow
       ans.style.maxHeight = "0px";
       ans.classList.remove("expanded");
