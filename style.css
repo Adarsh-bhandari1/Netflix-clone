@@ -49,6 +49,59 @@ nav button {
   position: relative;
   z-index: 10;
 }
+
+/* Button styles (Netflix-like) */
+.btn {
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 180ms ease, transform 80ms ease,
+    box-shadow 120ms ease;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: 2px solid rgba(255, 255, 255, 0.14);
+  outline-offset: 2px;
+}
+
+/* Small nav buttons */
+.btn--small {
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 20px;
+}
+
+/* Primary red */
+.btn--primary {
+  background: #e50914;
+  color: #fff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+.btn--primary:hover {
+  background: #f6121d;
+  transform: translateY(-1px);
+}
+
+/* Outline / secondary */
+.btn--outline {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.btn--outline:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Large hero CTA */
+.btn--large {
+  padding: 14px 24px;
+  font-size: 18px;
+  border-radius: 4px;
+}
 .hero {
   font-family: "Martel Sans", sans-serif;
   height: calc(100% - 62px);
@@ -79,6 +132,40 @@ nav button {
   font-weight: 400;
   font-size: 20px;
   text-align: center;
+}
+
+/* Hero input + CTA */
+.hero .hero-cta {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-cta input {
+  padding: 14px 16px;
+  border-radius: 4px;
+  border: none;
+  min-width: 320px;
+  max-width: 520px;
+  font-size: 16px;
+}
+.hero .hero-cta input::placeholder {
+  color: #cfcfcf;
+}
+
+@media (max-width: 600px) {
+  .hero .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero .hero-cta input {
+    width: 100%;
+    min-width: 0;
+  }
+  .hero .btn--large {
+    width: 100%;
+  }
 }
 .seperation {
   height: 8px;
